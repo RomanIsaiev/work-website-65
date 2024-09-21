@@ -11,3 +11,265 @@
 
 @import url(../css/utils/variables.css);
 @import url(../css/utils/common.css);
+
+body {
+  background: #171717;
+}
+
+.main-section {
+  height: 100vh;
+
+  background-image: url(../img/ellipse-01.svg), url(../img/ellipse-02.svg),
+    url(../img/ellipse-03.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right top 50%, left bottom;
+  background-size: 400px, cover, contain;
+}
+
+/* video */
+
+.video {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.watch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px 10px;
+  border-radius: 7px 7px 0px 0px;
+  border: 1px solid #ffd676;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 9.8px 0px rgba(255, 221, 85, 0.3);
+
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.watch-here-title {
+  color: #ffd676;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 14px */
+  text-transform: uppercase;
+}
+
+.vidio-wrapper {
+  position: relative;
+  border-radius: 7px;
+  border: 1px solid #ffd676;
+
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hide {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+
+  width: 30px;
+  height: 30px;
+  background-color: #101010;
+}
+
+.dont-touch {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 999;
+
+  width: 50px;
+  height: 130px;
+  background-color: #10101000;
+}
+
+@media screen and (min-width: 768px) {
+  .video {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .watch-container {
+    gap: 15px;
+    padding: 18px 10px;
+    border: 2px solid #ffd676;
+    max-width: 355px;
+  }
+
+  .watch-here-title {
+    font-size: 18px;
+  }
+
+  .vidio-wrapper {
+    border: 2px solid #ffd676;
+    max-width: 570px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .video {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .watch-container {
+    gap: 20px;
+    padding: 22px 10px;
+    border: 2px solid #ffd676;
+    max-width: 522px;
+  }
+
+  .watch-here-title {
+    font-size: 22px;
+  }
+
+  .vidio-wrapper {
+    border: 2px solid #ffd676;
+    max-width: 838px;
+    height: auto;
+  }
+
+  .hide {
+    width: 70px;
+  }
+}
+
+/* check */
+
+.check-container {
+  padding: 30px 0;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.check-title {
+  text-align: center;
+  font-family: Benzin-Semibold;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 20.4px */
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    92deg,
+    #ffe275 8.51%,
+    #ffeeaf 52.94%,
+    #ffe275 97.36%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 12px;
+}
+
+.check-desc {
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 105%; /* 16.8px */
+  letter-spacing: -0.16px;
+
+  max-width: 260px;
+  margin: 0 auto 30px auto;
+}
+
+.check-btn {
+  display: block;
+
+  color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 18.9px */
+  letter-spacing: -0.18px;
+
+  padding: 24px;
+
+  border-radius: 130px;
+  background: linear-gradient(
+    92deg,
+    #ffe275 8.51%,
+    #ffeeaf 52.94%,
+    #ffe275 97.36%
+  );
+
+  margin: 0 auto 12px auto;
+}
+
+.check-attention {
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 15.4px */
+  letter-spacing: -0.28px;
+
+  opacity: 0.5;
+}
+
+.check-attention span {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .check-container {
+    padding: 60px 0;
+    max-width: 620px;
+    border-radius: 20px;
+  }
+
+  .check-title {
+    font-size: 26px;
+    max-width: 500px;
+    margin: 0 auto;
+
+    margin-bottom: 24px;
+  }
+
+  .check-desc {
+    font-size: 20px;
+    letter-spacing: -0.26px;
+    max-width: 360px;
+    margin: 0 auto 40px auto;
+  }
+
+  .check-btn {
+    display: block;
+    font-size: 20px;
+    letter-spacing: -0.24px;
+    padding: 24px;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+  }
+
+  .check-attention {
+    font-size: 18px;
+    letter-spacing: -0.34px;
+
+    max-width: 400px;
+    margin: 0 auto;
+
+    opacity: 0.5;
+  }
+}

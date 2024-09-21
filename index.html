@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>запис на безкоштовний розбір</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -11,10 +11,68 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
     <main>
-      <section></section>
+      <section class="main-section">
+        <div class="container">
+          <div class="video">
+            <div class="watch-container">
+              <img
+                src="./src/img/watch-here-arrow.svg"
+                alt="arrow"
+                width="12"
+                height="8"
+              />
+              <p class="watch-here-title">Дивитись тут</p>
+              <img
+                src="./src/img/watch-here-arrow.svg"
+                alt="arrow"
+                width="12"
+                height="8"
+              />
+            </div>
+            <div class="vidio-wrapper">
+              <div class="dont-touch"></div>
+              <div class="hide"></div>
+              <div style="padding: 50.05% 0 0 0; position: relative">
+                <iframe
+                  src="https://player.vimeo.com/video/1011398315?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 7px;
+                    z-index: 1;
+                  "
+                  title="ДІАГНОСТИЧНА СЕСІЯ"
+                ></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+          </div>
+          <div class="check-container">
+            <h2 class="check-title">запишись на безкоштовний розбір</h2>
+            <p class="check-desc">
+              Ти отримаєш покрокові індивідуальні рекомендації, у тебе буде план
+              і інструменти для досягнення своєї цілі
+            </p>
+            <a
+              class="check-btn"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfTyjcIYd4BPjExE2fhiOuKgycjCeJF-M6m1t2BBUfxgpMbuw/viewform?usp=sf_link"
+              rel="nofollow"
+              target="_blank"
+              >ЗАПИСАТИСЬ</a
+            >
+            <p class="check-attention">
+              <span>Важливо:</span> будьте на зв&#39;язку в Телеграм, щоб
+              записатися на Розбір. Кількість місць обмежена!
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
   </body>
 </html>
